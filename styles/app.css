@@ -1,0 +1,17 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;  /* => 10px*/
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    font-size: 1.6rem;
+    font-family: "Roboto";
+}
+a{
+    text-decoration: none;
+}
