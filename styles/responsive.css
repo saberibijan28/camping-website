@@ -1,0 +1,27 @@
+@media screen and (min-width:576px) {
+    
+    
+}
+@media screen and (min-width:768px) {
+    .menu{
+        display: flex;
+    }
+    .nav__btn{
+        display: none;
+    }
+    .header__links{
+        display: none;
+    }
+}
+@media screen and (min-width:992px) {
+    .header__links{
+        display: block;
+    }
+    
+}
+@media screen and (min-width:1200px) {
+    
+}
+@media screen and (min-width:1400px) {
+    
+}
