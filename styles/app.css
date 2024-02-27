@@ -2,6 +2,7 @@
     --orange: #E76F51;
     --white: #fff;
     --grey: #D2D2D2;
+    --dark: #383735;
 }
 
 html {
@@ -49,7 +50,11 @@ a {
     border-bottom-left-radius: 10rem;
     border-bottom-right-radius: 10rem;
 }
-
+/*
+========
+    nav
+========    
+*/
 .nav {
     display: flex;
     justify-content: space-between;
@@ -60,18 +65,27 @@ a {
     display: flex;
     align-items: center;
 }
+/*
+==============
+    app logo
+==============  
+*/
 .app-logo {
     display: block;
     width: 5.5rem;
     height: 5.5rem;
-    margin-right: 3rem;
+    margin-right: 4rem;
 }
 
 .app-logo__img {
     width: 100%;
     height: 100%;
 }
-
+/*
+=========
+    menu
+=========    
+*/
 .menu {
     display: none;
 }
@@ -82,8 +96,36 @@ a {
 
 .menu__link {
     color: var(--grey);
+    transition: color 100ms ease-in;
+}
+.menu__link:hover{
+    color: var(--white);
+}
+.menu__link--active{
+    color: var(--white);
+    position: relative;
+    z-index: 1;
+}
+.menu__link--active::before{
+    content: ' ';
+    width: 4rem;
+    height: 0.4rem;
+    background-color: var(--orange);
+    position: absolute;
+    top: 7px;
+    transform: rotate(45deg);
+    border-radius: 10rem;
+    z-index: -1;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
 }
 
+/*
+=============
+    nav menu
+=============   
+*/
 .nav-menu {
     position: fixed;
     top: 0;
@@ -125,14 +167,18 @@ a {
 .nav-menu__link--border {
 
 }
-
+/*
+================
+    header link
+================   
+*/
 .header__links {
     display: none;
 }
 
 .header__link {
     color: var(--white);
-    font-family: "Roboto Medium";
+    font-family: "Roboto-Medium";
     margin-left: 1.5rem;
 }
 
@@ -140,8 +186,17 @@ a {
     border: 1px solid var(--white);
     padding: 1rem 2.5rem;
     border-radius: 10rem;
+    transition: all 100ms ease-in;
 }
-
+.header__link--border:hover{
+    background-color: var(--white);
+    color: var(--dark);
+}
+/*
+=============
+    nav btn
+=============   
+*/
 .nav__btn {
     background-color: var(--white);
     width: 5.5rem;
