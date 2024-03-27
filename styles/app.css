@@ -172,23 +172,23 @@ a {
     header link
 ================   
 */
-.header__links {
+.nav__links {
     display: none;
 }
 
-.header__link {
+.nav__link {
     color: var(--white);
     font-family: "Roboto-Medium";
     margin-left: 1.5rem;
 }
 
-.header__link--border {
+.nav__link--border {
     border: 1px solid var(--white);
     padding: 1rem 2.5rem;
     border-radius: 10rem;
     transition: all 100ms ease-in;
 }
-.header__link--border:hover{
+.nav__link--border:hover{
     background-color: var(--white);
     color: var(--dark);
 }

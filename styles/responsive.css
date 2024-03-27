@@ -9,12 +9,12 @@
     .nav__btn{
         display: none;
     }
-    .header__links{
+    .nav__links{
         display: none;
     }
 }
 @media screen and (min-width:992px) {
-    .header__links{
+    .nav__links{
         display: block;
     }
     

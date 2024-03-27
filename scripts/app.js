@@ -9,13 +9,14 @@ navBtn.addEventListener('click', function(){
 
 
 
-let menu = document.querySelectorAll('.menu__item')
+let menu = document.querySelectorAll('.menu__link')
+
 
 for(let i=0; i<menu.length ; i++){
     menu[i].addEventListener('click', function(event){
         for(let j =0; j< menu.length; j++){
             menu[j].classList.remove('menu__link--active')
         }
-        event.target.parentElement.classList.add('menu__link--active')
+        event.target.classList.add('menu__link--active')
     })
 }
