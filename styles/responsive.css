@@ -19,10 +19,15 @@
     .nav__links{
         display: none;
     }
+    
 }
 @media screen and (min-width:992px) {
     .nav__links{
         display: block;
+    }
+    .services{
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .header-content__caption{

@@ -3,6 +3,10 @@
     --white: #fff;
     --grey: #D2D2D2;
     --dark: #383735;
+    --ap-bg: #faf4f2;
+    --primary-font: "Roboto", Arial, Helvetica, sans-serif; 
+    --primary-font-md: "Roboto Medium", Arial, Helvetica, sans-serif; 
+    --secondry-font: "Archivo Black", Arial, Helvetica, sans-serif; 
 }
 
 html {
@@ -17,7 +21,8 @@ html {
 body {
     line-height: 1.6;
     font-size: 1.6rem;
-    font-family: "Roboto";
+    font-family: var(--primary-font);
+    background-color: var(--ap-bg);
 }
 
 /*
@@ -56,7 +61,7 @@ a {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    font-family: "Roboto-Medium";
+    font-family: var(--primary-font-md);
 }
 
 /*
@@ -173,7 +178,7 @@ a {
     padding-bottom: 1rem;
     margin-bottom: 2rem;
     font-size: 2rem;
-    font-family: "Archivo Black";
+    font-family: var(--secondry-font);
 }
 
 .mobile-menu__item {
@@ -235,7 +240,7 @@ a {
 
 .nav__link {
     color: var(--white);
-    font-family: "Roboto-Medium";
+    font-family: var(--primary-font-md);
     margin-left: 1.5rem;
 }
 
@@ -319,11 +324,11 @@ a {
 .header-content{
     text-align: center;
     color: var(--white);
-    margin-top: 6rem;
+    margin-top: 6rem 0 10rem 0;
 }
 
 .header-content__title{
-    font-family: "Archivo Black";
+    font-family: var(--secondry-font);
     font-size: 5rem;
     line-height: 1.2;
     max-width: 35rem;
@@ -336,4 +341,60 @@ a {
 }
 .header-content__link{
  background-color: var(--orange);
+}
+
+/*
+
+-- Main --
+
+*/
+
+.main{
+
+}
+
+/*
+
+===================
+    services
+===================    
+
+*/
+.services{
+    margin-top: -11rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+.service{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    background: var(--white);
+    border-radius: 2rem;
+    height: 26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    color: var(--dark);
+    width: 27rem;
+    flex-grow: 1;
+    margin-left: 1rem;
+    margin-left: 1rem;
+
+}
+
+.service__img{
+display: block;
+}
+
+.service__title{
+font-size: 1.8rem;
+margin: 1.5rem 0 0.6rem 0;
+}
+
+.service__caption{
+
 }
