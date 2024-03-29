@@ -1,3 +1,10 @@
+
+@media screen and (max-width:379px) {
+    .header-content__title{
+        font-size: 4rem;
+    }
+    
+}
 @media screen and (min-width:576px) {
     
     
@@ -6,7 +13,7 @@
     .menu{
         display: flex;
     }
-    .nav__btn{
+    .nav__btn , .nav-menu{
         display: none;
     }
     .nav__links{
@@ -16,6 +23,10 @@
 @media screen and (min-width:992px) {
     .nav__links{
         display: block;
+    }
+
+    .header-content__caption{
+        max-width: 53rem;
     }
     
 }
